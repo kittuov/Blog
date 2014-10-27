@@ -1,0 +1,38 @@
+@-webkit-keyframes blog_load{
+    0%
+    {
+        transform:scaleY(0.6);
+        transform:scaleY(30deg);
+        top:100px;
+        opacity:0;
+        perspective:50em;
+}
+    
+    100%
+    {
+        transform:scaleY(1);
+        transform:scaleY(0deg);
+        top:0px;
+        opacity:1;
+        perspective:0em;
+    }
+    
+}
+@keyframes blog_load{
+    0%
+    {
+        transform:scaleY(0.1);
+    }
+    
+    100%
+    {
+        transform:scaleY(1);
+    }
+    
+}
+
+.blog_load{
+    -webkit-animation: blog_load 0.4s ease-out;
+    animation: blog_load 0.4s ease-out;
+    opacity:1;
+}
