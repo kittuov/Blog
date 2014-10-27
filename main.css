@@ -1,0 +1,242 @@
+.shadowed {
+    -webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.7));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+.float_right{
+    float:right;
+}
+.float_left
+{
+    float:left;
+}
+
+/*
+    brief desctiption:
+*Schema:
+
+*body
+    *main_header
+    *main_content
+        *main_aside
+            *aside_section
+            *****
+        *main_section
+            *blog_post
+            *****
+    *main_footer
+
+*/
+
+
+/*Overall Layout starts*/
+body 
+{   position:absolute;
+    padding:0px;
+    margin: 0px;
+    background: rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    overflow:hidden;
+} 
+#main_header
+{
+    position:relative;
+    height:70px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    text-align:center;
+    font-size:40px;
+    font-weight:400;
+    margin-bottom:10px;
+}
+#main_container{
+    position:relative;
+    display:flex;
+    flex:1;
+    margin-top:0px;
+    margin-bottom:5px;
+    flex-direction:column; 
+    flex-direction:row;   
+}
+#main_footer
+{
+    display:block;
+    position:relative;
+    bottom:0px;
+    width:100%;
+    height:20px;
+    padding-top:5px;
+    text-align:center;
+    justify-content:center;
+    align-content:center;
+    vertical-align:middle;
+    background:#414f5c;
+    color:white;
+    font-weight:300;
+    font-size:12px;
+}
+/* Overall Layort Ends*/
+/* Main_header layout*/
+#main_header #title{
+    position:absolute;
+    width:100%;
+    left:0px;
+    text-align:center;
+    color:#2ca795;
+}
+#main_header #title img
+{
+    margin:10px;
+    height:50px;
+}
+#main_header #background{
+    position:relative;
+    float:top;
+    display:flex;
+    flex-direction:row;
+    flex-flow:row nowrap;
+    top:0px;
+    left:0px;
+    width:100%;
+}
+#main_header #background #block_2{
+    position:absolute;
+    display:inline-block;
+    float:left;
+    top:0px;
+    background:#2ca795;
+    width:320px;
+    height:70px;
+    left:-30px;
+    transform:skewX(40deg);
+    box-shadow:1px 1px 6px rgba(0,0,0,0.2);
+}
+#main_header #background #block_1{
+    position:absolute;
+    display:inline-block;
+    top:0px;
+    height:70px;
+    width:100%;
+    left:310px;
+    background:white;
+    flex:1;
+    transform:skewX(40deg);
+    box-shadow:1px 1px 6px rgba(0,0,0,0.2);
+}
+/* Main_container layout starts
+    * contains main_aside element and main_section
+*/
+#main_aside{
+    position:relative;
+    display:block;
+    float:left;
+    flex-direction:row;
+    width:340px;
+    left:0px;
+    margin-right:0px;
+    background:none;
+}
+#main_section
+{
+    position:relative;
+    display:inline-flex;
+    flex:1;
+    flex-flow:row wrap;
+    justify-content:center;
+    margin:5px;
+    margin-top:0px;
+    background:none;
+    left:0px;
+    overflow-y:scroll;
+    
+}
+
+/*Main_container layout ends */
+/* main_aside layout starts*/
+
+.aside_section{
+    margin:10px;
+    padding:10px;
+    padding-right:15px;
+    text-align:justify;
+    padding-left:15px;
+    background:white;
+    margin-bottom:20px;
+    border-bottom:1px solid #2ca795;
+    border-right:1px solid rgba(0,0,0,0.2);
+    border-bottom:1px solid #2ca795;
+    box-shadow:1px 1px 6px rgba(0,0,0,0.2);
+}
+
+.aside_section article{
+    text-align:justify;
+    font-size:14px;
+    
+}
+.aside_section footer{
+    margin-top:10px;
+    font-size:15px;    
+}
+
+/* Main_aside layout ends*/
+/* Blog_post layout*/
+.blog_post
+{
+    position:relative;
+    margin:10px;
+    padding:25px;
+    padding-bottom:10px;
+    text-align:justify;
+    background:white;  
+    flex:1;
+    flex-basis:400px;   
+    border-left:1px solid #2ca795;
+    box-shadow:1px 1px 6px rgba(0,0,0,0.2);
+}
+.blog_post header{
+    position:relative;
+    display:block;
+    color:#2ca795;
+    font-size:20px;
+    padding-bottom:5px;
+    border-bottom:1px solid rgba(0,0,0,0.2);
+}
+.blog_post header .number{
+    font-size:12px;
+    position:relative;
+    bottom:0px;
+}
+.blog_post header .time
+{
+    font-size:12px;
+    color:#b6b6b6;
+}
+.blog_post article{
+    position:relative;
+    display:block;
+    height:100px;
+    overflow-y:hidden;
+    margin-top:10px;
+    font-size:15px;
+}
+.blog_post footer
+{
+    display:block;
+    position:relative;
+    margin-top:10px;
+}
+
+/*main_footer*/
+#main_footer span
+{
+    margin-left:10px;
+    margin-right:10px;
+    fo
