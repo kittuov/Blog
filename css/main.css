@@ -58,7 +58,8 @@ body
     font-size:40px;
     font-weight:400;
     margin-bottom:10px;
-    overflow-X:hidden;
+    overflow-x:hidden;
+    overflow-y:visible;
 }
 #main_container{
     position:relative;

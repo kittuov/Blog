@@ -1,10 +1,11 @@
 var i=0;
+var main_section;
+
 function init()
 {
-    
+    main_section=document.getElementById("main_section").innerHTML;
     a=$("#main_section").children().length;
-    addcls(i);
-    
+    addcls(i);    
 }
 function addcls ( k){
     if (k<=a) 
