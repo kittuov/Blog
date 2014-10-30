@@ -203,7 +203,8 @@ body
     background:white;  
     height:350px;
     flex:1;
-    display:block;
+    display:flex;
+    flex-direction:column;
     transform-origin:bottom;
     border-left:1px solid #2ca795;
     flex-basis:400px;
@@ -230,10 +231,10 @@ body
 .blog_post article{
     position:relative;
     display:block;
-    height:100px;
     overflow-y:hidden;
     margin-top:10px;
     font-size:15px;
+    flex:1;
 }
 .blog_post footer
 {

@@ -40,12 +40,10 @@
 }
 @keyframes post_load{
     0%{
-        width:auto;
-        height:auto;
+        transform:scaleX(1);
     }
     100%{
-        width:100%;
-        height:100%;
+        transform:scaleX(7);
     }
     
 }
@@ -53,5 +51,10 @@
 .blog_load{
     -webkit-animation: blog_load 0.4s ease-out;
     animation: blog_load 0.4s ease-out;
+    opacity:1;
+}
+.post_load{
+    -webkit-animation: post_load 1s ease-out;
+    animation: post_load 1s ease-out;
     opacity:1;
 }
