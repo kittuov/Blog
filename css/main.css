@@ -1,4 +1,9 @@
-
+h1
+{
+    font-size:22px;
+    font-weight:300;
+    color:rgb(44, 167, 149);
+}
 .shadowed {
     -webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3));
     filter: url(#drop-shadow);
@@ -241,6 +246,17 @@ body
     display:block;
     position:relative;
     margin-top:10px;
+}
+/*#post*/
+#post
+{
+    display:flex;
+    position:absolute;
+    margin:0px;
+    right:0px;
+    z-index:10;
+    width:100px;height:100px;
+    background:grey;
 }
 
 /*main_footer*/
