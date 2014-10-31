@@ -101,10 +101,23 @@ body
     text-align:center;
     color:rgb(44, 167, 149);
 }
+#main_header #title span
+{
+	position:relative;
+	top:-35px;
+}
 #main_header #title img
 {
     margin:10px;
     height:50px;
+	
+}
+#main_header #title span img
+{
+	position:relative;
+    margin:0px;
+    height:80px;
+	top:28px;
 }
 #main_header #background{
     position:relative;
@@ -253,9 +266,10 @@ body
     display:flex;
     position:absolute;
     margin:0px;
+	opacity:0;
     right:0px;
     z-index:10;
-    width:100px;height:100px;
+    width:0px;height:0px;
     background:grey;
 }
 
